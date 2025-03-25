@@ -33,7 +33,7 @@ List * createList() {
         list->head = NULL;
         list->tail = NULL;
         list->current = NULL;
-    return list;
+    return list; 
 }
 
 void * firstList(List * list) {
@@ -53,10 +53,6 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-    if (list->tail != NULL){
-        list->current = list->tail;
-        return list->current->data;
-    }
     return NULL;
 }
 
